@@ -1,0 +1,128 @@
+* {
+    marigin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Jacquard+24+Charted&family=Pacifico&display=swap'); */
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    /* font-family: "Neue Montreal"; */
+background-image: url("../assets/back2.jpg");
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+background-color: #000000;
+/* overflow: hidden; */
+/* opacity: .98; */
+
+}
+
+
+
+
+
+header {
+position: fixed;
+width: auto;
+/* height: 50vh; */
+line-height: .5vmin;
+display: flex;
+flex-direction: column;
+border: 2px solid blue;
+margin-left: 10px;
+text-align: center;
+font-size: 2rem;
+letter-spacing: .4rem;
+text-shadow: 5px 5px 0px black, 10px 10px 10px rgb(133, 0, 0) ;
+/* background-image: url("../assets/redsmoke2.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat; */
+/* justify-content: space-evenly; */
+/* flex-direction: column-reverse; */
+
+
+}
+
+a { 
+    text-decoration: none;
+    color: #ff0000;
+    text-transform: uppercase;
+     /* font-family: "Jacquard 24 Charted", system-ui; */
+font-weight: 400;
+font-style: normal; 
+font-size: 2rem;
+background-color: transparent;
+}
+
+.slide-in{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background: #0f0f0f; */
+    transform-origin: bottom;
+    background-image: url("../assets/redsmoke.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.slide-out{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background: #860B0A; */
+    transform-origin: top;
+    background-image: url("../assets/redsmoke.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ #skull-container{
+    width: 20vw;
+    height :40vh;
+    border: 2px solid purple;
+    background-image: url("../assets/guymaskneon.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: transparent;
+    margin-top: -20vw;
+} 
+
+/*/////////////////Home Page styling////////////////////////////*/
+
+#home-body{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+#home-container{
+    width: 60vw;
+    height: 80%;
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    word-wrap: normal;
+    font-size: 300%;
+    margin-top: -20vh;
+    letter-spacing: .4rem;
+    text-shadow: 5px 5px 0px black, 10px 10px 10px rgb(133, 0, 0) ;
+    /* color: rgb(155, 155, 155); */
+    /* font-weight: 800; */
+    line-height: 0rem;
+    word-wrap: break-word;
+}
