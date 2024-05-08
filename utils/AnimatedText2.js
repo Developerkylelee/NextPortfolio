@@ -22,13 +22,13 @@ const AnimatedCharacters = (props) => {
   const item = {
     hidden: {
       y: "-300vh",
-      color: "#000000",
-      transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.85 }
+      color: "#ffffff",
+      transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.15 }
     },
     visible: {
       y: 200,
-      color: "#FF0000",
-      transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.75 }
+      color: "#ffffff",
+      transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.15 }
     }
   };
 
@@ -60,7 +60,7 @@ const AnimatedCharacters = (props) => {
             {words[index].flat().map((element, index) => {
               return (
                 <span
-                className="glitch layers" data-text="Welcome to my portfolio"
+                className="" data-text="Welcome to my portfolio"
                   style={{
                     overflow: "hidden",
                     display: "inline"
@@ -69,7 +69,7 @@ const AnimatedCharacters = (props) => {
                 >
                   <motion.span
                     className="glitch layers" data-text="01"
-                    style={{ display: "inline-block" }}
+                    style={{ display: "inline" }}
                     variants={item}
                   >
                     {element}

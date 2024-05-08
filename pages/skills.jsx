@@ -5,7 +5,9 @@ const skills = () => {
   return (
     <>
       <Page>
-        <h1>Skills</h1>
+      <div className="page-body">
+            <div className="page-container"></div>
+            </div> 
       </Page>
     </>
   )

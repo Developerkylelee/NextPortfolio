@@ -4,12 +4,13 @@ import react from "react";
 
 
 
+
 export default function Page({ children }) {
     return(
         <>
         <Header />
         <main>{children}</main>
-        <Skull />
+        {/* <Skull /> */}
         </>
     )
 }

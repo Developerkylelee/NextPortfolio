@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 import AnimatedText from "../utils/AnimatedText";
 import localFont from "next/font/local";
 
-const myFont = localFont({ src: "../assets/skeleboom.ttf" });
+const myFont = localFont({ src: "../assets/KeyVirtue.ttf" });
 
 
 export default function Homecontainer() {
   const [replay, setReplay] = useState(true);
   // Placeholder text data, as if from API
   const placeholderText = [
-    { type: "heading1", text: "Welcome to my Portfolio" },
+    { type: "heading1", text: "Welcome to my Portfolio"},
     { type: "heading1", text: "My name is Kyle Lee" },
     {
       type: "heading1",
@@ -43,13 +43,16 @@ export default function Homecontainer() {
     <>
     <div className={`${myFont.className}`}>
     <motion.div
-      className="App"
+    
+      className="App" 
       initial="hidden"
       // animate="visible"
       animate={replay ? "visible" : "hidden"}
       variants={container}
+      transition={{ delay: 0.2, duration: 0.2, ease: 'easeInOut'}}
+      
     >
-      <div className="container ">
+      <div className="container">
         {placeholderText.map((item, index) => {
           return <AnimatedText {...item} key={index} />;
         })}

@@ -4,7 +4,9 @@ export default function Contact() {
     return(
         <Page>
 
-          <h1>Contact</h1>  
+<div className="page-body">
+            <div className="page-container"></div>
+            </div>  
         </Page>
     )
 }

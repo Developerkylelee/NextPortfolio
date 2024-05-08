@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import { motion, AnimatePresence } from "framer-motion";
 import react from "react";
 import "./global.css"
+import "../pages/textanimation.css"
 // import { Inter } from "next/font/google"
 import localFont from 'next/font/local'
 
@@ -21,7 +22,7 @@ const App = ({ Component, pageProps }) => {
           initial={{ scaleY: 0 }}
           animate={{ scaleY: 0 }}
           exit={{ scaleY: 1 }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 1, ease: [0.82, 1, 0.86, 1] }}
         ></motion.div>
 
         <motion.div
@@ -29,7 +30,7 @@ const App = ({ Component, pageProps }) => {
            initial={{ scaleY: 1 }}
            animate={{ scaleY: 0 }}
            exit={{ scaleY: 0 }}
-           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+           transition={{ duration: 1, ease: [0.82, 1, 0.86, 1] }}
         ></motion.div>
       </motion.div>
     </AnimatePresence>

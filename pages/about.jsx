@@ -1,12 +1,13 @@
 import Page from "@/components/page";
 import react from "react";
-
+import Aboutcontainer from "@/components/Aboutcontainer";
 
 export default function About() {
-    return(
-        <Page>
-
-          <h1>About</h1>  
-        </Page>
-    )
+  return (
+    <Page>
+      <div className="page-body">
+        <Aboutcontainer />
+      </div>
+    </Page>
+  );
 }

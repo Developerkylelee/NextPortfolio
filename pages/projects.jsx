@@ -5,7 +5,9 @@ const projects = () => {
   return (
     <>
       <Page>
-        <h1>Projects</h1>
+      <div className="page-body">
+            <div className="page-container"></div>
+            </div> 
       </Page>
     </>
   );
