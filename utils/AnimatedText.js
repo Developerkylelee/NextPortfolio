@@ -60,7 +60,7 @@ const AnimatedCharacters = (props) => {
             {words[index].flat().map((element, index) => {
               return (
                 <span
-                className="glitch layers" data-text="Welcome to my portfolio"
+                className="" data-text="Welcome to my portfolio"
                   style={{
                     overflow: "hidden",
                     display: "inline"

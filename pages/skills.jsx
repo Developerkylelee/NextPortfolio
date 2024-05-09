@@ -1,12 +1,15 @@
 import react from 'react' 
 import Page from "@/components/page";
+import Skillscontainer from '@/components/Skillscontainer';
 
 const skills = () => {
   return (
     <>
-      <Page>
+     <Page>
       <div className="page-body">
-            <div className="page-container"></div>
+        <div className="page-container">
+         <Skillscontainer />
+         </div>
             </div> 
       </Page>
     </>
